@@ -3,9 +3,12 @@ import time
 
 
 def randomAd(config):
-    dificuldade = config['dificuldade']
-    if dificuldade == difficult[dificuldade]:
-        print('funcionou')
+    dificuldade_selecionada = config['dificuldade']
+  
+    if dificuldade_selecionada == 0:
+        print('Dificuldade Facil pronta pra iniciar')
+    time.sleep(5)
+        
        
 
 
@@ -18,4 +21,7 @@ def matchgenerator(config):
     conta = allMath.get(config['conta'])
     if conta:
         conta(config)
+    else:
+        print(f"⚠️ Operação '{config['conta']}' não encontrada!")
         time.sleep(5)
+ 
