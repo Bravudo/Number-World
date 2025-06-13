@@ -5,7 +5,7 @@ import time
 from content import menu, player, fastmatch, clear
 from fastmath import ffastmatch
 import randomizator
-
+import asyncio
 
 
 
